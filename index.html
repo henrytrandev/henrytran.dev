@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Henry Tran</title>
+  <meta name="description" content="Henry Tran is a computer science student at the City College of New York, focused on combining tech with finance.">
+  <meta property="og:title" content="Henry Tran">
+  <meta property="og:description" content="CS student at the City College of New York, focused on combining tech with finance.">
+  <meta property="og:image" content="https://henrytran.dev/assets/ccny-small.jpg">
+  <meta property="og:url" content="https://henrytran.dev">
+  <meta name="theme-color" content="#141B24">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></symbol>
+  </svg>
+
+  <header class="hero">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">Henry Tran</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="assets/Henry_Tran_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </nav>
+
+    <div class="banner" id="top">
+      <section class="intro" aria-label="About">
+        <div class="who">
+          <div class="avatar" id="avatar">
+            <img src="assets/headshot.jpg" alt="Photo of Henry Tran" onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            <span class="initials" aria-hidden="true">HT</span>
+          </div>
+          <div>
+            <h1 class="name">Henry Tran</h1>
+            <span class="bar" aria-hidden="true"></span>
+          </div>
+        </div>
+        <p class="bio-lead">Hey, I'm Henry! I'm a computer science student at the City College of New York, focused on combining tech with finance.</p>
+        <p class="bio">I love building things that run on real data, from data pipelines to full stack apps like Echo, and I'm especially interested in software engineering, data engineering and cloud.</p>
+        <div class="actions">
+          <a class="btn" href="assets/Henry_Tran_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <div class="socials">
+            <a href="https://github.com/henrytrandev" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+            <a href="https://www.linkedin.com/in/tranbh" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+            <a href="mailto:henrytran.data@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-label="Projects">
+        <div class="projects-head">
+          <h2 class="section-title small">Projects <span class="bar" aria-hidden="true"></span></h2>
+          <div class="arrows">
+            <button class="arrow" id="prev" aria-label="Previous project"><svg class="i"><use href="#i-left"/></svg></button>
+            <button class="arrow" id="next" aria-label="Next project"><svg class="i"><use href="#i-right"/></svg></button>
+          </div>
+        </div>
+        <div class="track" id="track" tabindex="0" aria-label="Project carousel"></div>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+      </section>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience <span class="bar" aria-hidden="true"></span></h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Financial Data Engineer Intern</h3>
+            <p class="org">Kapitus <span class="dot-sep">·</span> New York City, NY</p>
+          </div>
+          <p class="when">January – May 2026</p>
+        </div>
+        <ul class="points">
+          <li>Refactored per-facility Alteryx macros into one master macro, cutting daily ETL runtime by 75% and speeding up loan portfolio reporting to investors</li>
+          <li>Consolidated facility tables into a unified MySQL view as a single source of truth for investor reporting</li>
+          <li>Built automated data quality checks to catch anomalies before loan data reached institutional investors</li>
+          <li>Documented the consolidated macro logic and MySQL view so the team could maintain the workflow</li>
+        </ul>
+        <ul class="tags" aria-label="Tools">
+          <li>Alteryx</li><li>SQL</li><li>MySQL</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-title">Education <span class="bar" aria-hidden="true"></span></h2>
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>B.S. in Computer Science</h3>
+            <p class="org">City College of New York (CUNY) <span class="dot-sep">·</span> New York City, NY</p>
+          </div>
+          <p class="when">Expected June 2028</p>
+        </div>
+        <ul class="tags" aria-label="Coursework">
+          <li>Software Engineering</li><li>Data Structures</li><li>Algorithms</li><li>Software Design</li>
+          <li>Linear Algebra</li><li>Discrete Math</li><li>Probability &amp; Statistics</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-title">Toolkit <span class="bar" aria-hidden="true"></span></h2>
+      <ul class="tags big" aria-label="Skills">
+        <li>Python</li><li>SQL</li><li>PostgreSQL</li><li>MySQL</li><li>Alteryx</li><li>FastAPI</li>
+        <li>SQLAlchemy</li><li>NumPy / SciPy</li><li>Git</li><li>C++</li><li>Java</li><li>JavaScript</li><li>R</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Henry Tran <span class="dot-sep">·</span> New York City</p>
+    <div class="socials">
+      <a href="https://github.com/henrytrandev" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+      <a href="https://www.linkedin.com/in/tranbh" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+      <a href="mailto:henrytran.data@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
