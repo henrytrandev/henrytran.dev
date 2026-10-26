@@ -95,10 +95,10 @@
           <p class="when">January – May 2026</p>
         </div>
         <ul class="points">
-          <li>Refactored per-facility Alteryx macros into one master macro, cutting daily ETL runtime by 75% and speeding up loan portfolio reporting to investors</li>
-          <li>Consolidated facility tables into a unified MySQL view as a single source of truth for investor reporting</li>
-          <li>Built automated data quality checks to catch anomalies before loan data reached institutional investors</li>
-          <li>Documented the consolidated macro logic and MySQL view so the team could maintain the workflow</li>
+          <li>Re-engineered a daily Alteryx ETL tracking loans pledged to financing facilities, merging 8 per-facility macros into one master macro and cutting runtime by 75%</li>
+          <li>Built a MySQL view unifying 8 facility tables into a single source of truth for portfolio reporting</li>
+          <li>Implemented automated freshness and quality checks that caught stale source data before reports reached investors</li>
+          <li>Authored process documentation for the redesigned pipeline, successfully handing it off to the team&rsquo;s director and developer</li>
         </ul>
         <ul class="tags" aria-label="Tools">
           <li>Alteryx</li><li>SQL</li><li>MySQL</li>

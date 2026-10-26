@@ -148,8 +148,8 @@ ul { list-style: none; }
   background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 8px;
 }
 .logo img { width: 100%; height: 100%; object-fit: contain; }
-.logo.full { padding: 0; }
-.logo.full img { object-fit: cover; }
+.logo.full { padding: 0; background: #272727; }
+.logo.full img { object-fit: cover; flex: none; width: 108%; height: 108%; max-width: none; }
 .logo.bare { padding: 0; background: transparent; }
 .logo .logo-initials { display: none; color: var(--amber); font-weight: 600; font-size: 22px; }
 .logo .logo-initials.long { font-size: 16px; }
@@ -162,7 +162,7 @@ ul { list-style: none; }
 .when { color: var(--text-faint); font-size: 16px; white-space: nowrap; padding-top: 4px; }
 .points { margin-bottom: 20px; }
 .points li { position: relative; padding-left: 22px; color: var(--text-muted); margin-bottom: 8px; }
-.points li::before { content: ""; position: absolute; left: 2px; top: 0.72em; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--amber); }
+.points li::before { content: ""; position: absolute; left: 2px; top: 0.56em; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--amber); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li { background: var(--navy); border: 1px solid var(--line); color: var(--text-soft); font-size: 14px; padding: 5px 12px; border-radius: 6px; }
 .tags.big li { font-size: 16px; padding: 8px 16px; background: var(--card); }
